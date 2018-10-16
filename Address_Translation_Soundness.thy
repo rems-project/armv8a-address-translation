@@ -1,6 +1,9 @@
+(*<*)
+(* Author: Thomas Bauereiss *)
 theory Address_Translation_Soundness
   imports Address_Translation_Pure
 begin
+(*>*)
 
 section \<open>Soundness of pure characterisation\<close>
 

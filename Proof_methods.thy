@@ -1,6 +1,10 @@
+(*<*)
+(* Author: Kyndylan Nienhuis *)
+(* Author: Thomas Bauereiss *)
 theory Proof_methods
   imports Hoare_Extras "HOL-Eisbach.Eisbach_Tools"
 begin
+(*>*)
 
 section \<open>Helper lemmas\<close>
 

@@ -1,8 +1,11 @@
+(*<*)
+(* Author: Thomas Bauereiss *)
 theory Hoare_Extras
   imports
     Sail.Hoare
     "HOL-Eisbach.Eisbach"
 begin
+(*>*)
 
 text \<open>Various Hoare proof rules that are useful for this model, e.g. for directly splitting
 tuples with many elements.\<close>

@@ -1,6 +1,9 @@
+(*<*)
+(* Author: Thomas Bauereiss *)
 theory Address_Translation_Pure
   imports AArch64_Aux Address_Translation_Orig
 begin
+(*>*)
 
 section \<open>Pure characterisation\<close>
 

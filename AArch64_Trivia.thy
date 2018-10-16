@@ -1,6 +1,9 @@
+(*<*)
+(* Author: Thomas Bauereiss *)
 theory AArch64_Trivia
   imports "Sail-AArch64.Aarch64_lemmas" Sail.Sail2_operators_mwords_lemmas Word_Extra Proof_methods
 begin
+(*>*)
 
 text \<open>Various helper lemmas for simplifying proof obligations arising in the computation of
 preconditions, e.g. if-then-else-distributivity rules for the datatypes in the model.\<close>

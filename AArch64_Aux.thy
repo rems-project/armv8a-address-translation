@@ -1,6 +1,9 @@
+(*<*)
+(* Author: Thomas Bauereiss *)
 theory AArch64_Aux
   imports AArch64_Trivia
 begin
+(*>*)
 
 text \<open>Lemmas about auxiliary functions in the original model, e.g. for reading system registers or
 reading and writing memory.\<close>

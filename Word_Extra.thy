@@ -1,13 +1,15 @@
+(*<*)
+(* Author: Kyndylan Nienhuis *)
+(* Author: Thomas Bauereiss *)
 theory Word_Extra
-
 imports 
   Main
   "HOL-Word.Word"
   "HOL-Lattice.Lattice"
   "HOL-Eisbach.Eisbach_Tools"
 begin
-
 (*>*)
+
 section \<open>Library for machine words\<close>
 
 text \<open>We first prove lemmas about integers, then about definitions that create words (such as

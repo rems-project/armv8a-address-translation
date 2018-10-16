@@ -1,6 +1,9 @@
+(*<*)
+(* Author: Thomas Bauereiss *)
 theory Address_Translation_Orig
   imports "Sail-AArch64.Aarch64_lemmas"
 begin
+(*>*)
 
 section \<open>Critical parts of original definition\<close>
 
