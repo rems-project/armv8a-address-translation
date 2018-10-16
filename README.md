@@ -33,13 +33,16 @@ These proofs require
 
 - Isabelle 2018,
 - the ARMv8-A model and the Sail library for Isabelle at revision
-  07e3591e2427db2d9407d554ac57984ca566c6ed of Sail,
+  07e3591e2427db2d9407d554ac57984ca566c6ed of
+  [Sail](https://github.com/rems-project/sail),
 - the Lem library at revision
-  54e1c03a1f9997445132d326f568f429c924b0b1 of Lem.
+  54e1c03a1f9997445132d326f568f429c924b0b1 of
+  [Lem](https://github.com/rems-project/lem).
 
 The Sail repository contains snapshots of these libraries in the directory
 snapshots/isabelle (last checked that the versions there match the ones
-required here at Sail revision fb9a2e2367c912a04ae8cd1a8d2aa9c2f2220c14).
+required here at [Sail](https://github.com/rems-project/sail) revision
+fb9a2e2367c912a04ae8cd1a8d2aa9c2f2220c14).
 
 If SNAPSHOTS is substituted with the path to that snapshots directory, the
 following command (executed in this directory) opens the main file of this
