@@ -1,9 +1,10 @@
 # ARMv8-A Address Translation: Isabelle Proof Scripts
 
 This directory contains the Isabelle scripts for the proof about ARMv8-A
-address translation presented in §8 of the paper.  It imports our ARMv8-A model
-and the Sail and Lem support libraries from the directory snapshots/isabelle in
-this archive.  The main proof is structured into files as follows:
+address translation presented in §8 of the paper "ISA Semantics for ARMv8-A,
+RISC-V, and CHERI-MIPS".  The proof scripts import our ARMv8-A model as well as
+the Sail and Lem support libraries (see below).  The main proof is structured
+into files as follows:
 
 - `Address_Translation_Pure.thy` contains our pure characterisation of address
   translation.
@@ -31,25 +32,31 @@ The remaining files contain auxiliary definitions and lemmas:
 
 These proofs require
 
-- Isabelle 2018,
+- [Isabelle](https://isabelle.in.tum.de/) 2018,
 - the ARMv8-A model and the Sail library for Isabelle at revision
-  07e3591e2427db2d9407d554ac57984ca566c6ed of
+  `07e3591e2427db2d9407d554ac57984ca566c6ed` of
   [Sail](https://github.com/rems-project/sail),
 - the Lem library at revision
-  54e1c03a1f9997445132d326f568f429c924b0b1 of
+  `54e1c03a1f9997445132d326f568f429c924b0b1` of
   [Lem](https://github.com/rems-project/lem).
 
 The Sail repository contains snapshots of these libraries in the directory
 snapshots/isabelle (last checked that the versions there match the ones
 required here at [Sail](https://github.com/rems-project/sail) revision
-fb9a2e2367c912a04ae8cd1a8d2aa9c2f2220c14).
+`fb9a2e2367c912a04ae8cd1a8d2aa9c2f2220c14`).
 
-If SNAPSHOTS is substituted with the path to that snapshots directory, the
-following command (executed in this directory) opens the main file of this
-proof:
+If `SNAPSHOTS_DIR` is substituted with the path to that snapshots/isabelle
+directory, then the following command (executed in this directory) opens the
+main file of this proof:
 
 ```
-isabelle jedit -d SNAPSHOTS -l Sail-AArch64 Address_Translation_Soundness.thy
+isabelle jedit -d SNAPSHOTS_DIR -l Sail-AArch64 Address_Translation_Soundness.thy
+```
+
+There is also a Makefile that can be used to check the proof non-interactively:
+
+```
+make SNAPSHOTS_DIR=... check
 ```
 
 On our test machine (Intel Core i7-7700 CPU @ 3.60GHz, 64GB RAM) checking the
